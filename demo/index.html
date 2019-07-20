@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .banner-wrapper {
+            position: relative;
+            width: 100%;
+            height: 440px;
+            overflow: hidden
+        }
+
+        .banner-wrapper .banner {
+            position: absolute;
+            width: 100%;
+            height: 440px;
+            top: 0;
+            left: 0;
+            overflow: hidden
+        }
+
+        .banner-wrapper .banner ul {
+            position: absolute;
+            width: 100%;
+            height: 440px;
+            top: 0;
+            left: 0;
+            overflow: hidden
+        }
+
+        .banner-wrapper .banner li {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 440px
+        }
+
+        .banner-wrapper .banner li a {
+            position: absolute;
+            display: block
+        }
+
+        .banner-wrapper .banner li img {
+            display: block
+        }
+
+        .banner-wrapper .banner li a.big {
+            top: 0;
+            left: 50%;
+            margin-left: -355px;
+            width: 830px;
+            height: 440px
+        }
+
+        .banner-wrapper .banner li a.big img {
+            width: 830px;
+            height: 440px
+        }
+
+        .banner-wrapper .banner li .little {
+            display: none;
+            position: absolute;
+            top: 5px;
+            left: 50%;
+            margin-left: 270px;
+            width: 150px;
+            height: 213px
+        }
+
+        .banner-wrapper .banner li .little a {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            text-decoration: none;
+            cursor: pointer
+        }
+
+        .banner-wrapper .banner li .little img {
+            position: absolute;
+            top: 67px;
+            left: 5px;
+            width: 140px;
+            height: 140px;
+            background: 0
+        }
+
+        .banner-wrapper .banner li .little .img-name {
+            position: absolute;
+            top: 17px;
+            left: 19px;
+            width: 112px;
+            height: 22px;
+            overflow: hidden;
+            font: 14px/22px "Microsoft Yahei", tahoma, arial, "Hiragino Sans GB";
+            color: #333
+        }
+
+        .banner-wrapper .banner li .little .img-desc {
+            position: absolute;
+            top: 37px;
+            left: 19px;
+            width: 120px;
+            height: 18px;
+            overflow: hidden;
+            font: 12px/18px "Microsoft Yahei", tahoma, arial, "Hiragino Sans GB";
+            color: #666
+        }
+
+        .banner-wrapper .banner li .l-cover {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #FFF;
+            opacity: .82;
+            filter: alpha(opacity=82)
+        }
+
+        .banner-wrapper .banner li .little:hover .l-cover {
+            opacity: .9;
+            filter: alpha(opacity=90)
+        }
+
+        .banner-wrapper .banner li .little2 {
+            top: 222px
+        }
+
+        .banner-wrapper .banner li.current {
+            display: block
+        }
+
+        .banner-wrapper a.btn {
+            position: absolute;
+            display: none;
+            width: 30px;
+            height: 64px;
+            top: 180px;
+            background: url(./images/index.png?v=edd3a)
+        }
+
+        .banner-wrapper a.btn-left {
+            left: 50%;
+            margin-left: -305px;
+            background-position: -82px -145px
+        }
+
+        .banner-wrapper a.btn-right {
+            right: 50%;
+            margin-right: -325px;
+            background-position: -120px -145px
+        }
+
+        .banner-wrapper a.btn-left:hover {
+            background-position: -161px -145px
+        }
+
+        .banner-wrapper a.btn-right:hover {
+            background-position: -198px -145px
+        }
+
+        .banner-wrapper .banner-nav-wrapper {
+            position: absolute;
+            top: 400px;
+            width: 100%;
+            height: 20px;
+            text-align: center;
+            font-size: 0
+        }
+
+        .banner-wrapper .banner-nav-wrapper .banner-nav {
+            position: relative;
+            display: inline-block;
+            opacity: .8;
+            padding: 0 8px 0 0;
+            height: 20px;
+            margin-left: 100px
+        }
+
+        .banner-wrapper .banner-nav-wrapper .banner-nav a {
+            position: relative;
+            display: inline-block;
+            margin-left: 8px;
+            width: 20px;
+            height: 20px;
+            background: url(./images/index.png?v=edd3a) -26px -100px;
+            color: #FFF
+        }
+
+        .banner-wrapper .banner-nav-wrapper .banner-nav a.current {
+            background-position: 0 -100px
+        }
+
+        .root1200 .banner-wrapper .banner li a.big {
+            margin-left: -405px
+        }
+
+        .root1200 .banner-wrapper .banner li .little {
+            display: block
+        }
+
+        .root1200 .banner-wrapper a.btn-left {
+            margin-left: -405px
+        }
+
+        .root1200 .banner-wrapper a.btn-right {
+            margin-right: -425px
+        }
+
+        .root1200 .banner-wrapper .banner-nav-wrapper .banner-nav {
+            margin-left: 0
+        }
+
+    </style>
+</head>
+<body class="root1200">
+<div class="banner-wrapper">
+    <div class="banner">
+        <ul>
+            <li style="background: rgb(30, 30, 30); display: none;" data-bgflag="true">
+                <a href="http://shop.suning.com/30000087/10009640.html" class="big" target="_blank"
+                   name="index3_homepage1_32618013025_pic01">
+                    <img alt="戴森超品" class="lazy-loading" src="http://image2.suning.cn/uimg/cms/img/149854573176365565.jpg">
+                </a>
+                <div class="little little1">
+                    <div class="l-cover"></div>
+                    <a href="http://cuxiao.suning.com/jdnzzkzn.html" target="_blank"
+                       name="index3_homepage1_32618013025_pic02">
+                        <p class="img-name">全民抢冰箱</p>
+                        <p class="img-desc">每满1000立减100</p>
+                        <img alt="全民抢冰箱" class="lazy-loading"
+                             src="http://image3.suning.cn/uimg/cms/img/149856368143049730.png">
+                    </a>
+                </div>
+                <div class="little little2">
+                    <div class="l-cover"></div>
+                    <a href="http://cuxiao.suning.com/qygnzcgj.html" target="_blank"
+                       name="index3_homepage1_32618013025_pic03">
+                        <p class="img-name">企业采购季</p>
+                        <p class="img-desc">1000元购物券限量返</p>
+                        <img alt="企业采购季" class="lazy-loading"
+                             src="http://image2.suning.cn/uimg/cms/img/149821780020766212.png">
+                    </a>
+                </div>
+            </li>
+            <li d-color="#fe463a" data-bgflag="true" style="display: none; background: rgb(254, 70, 58);">
+                <a d-href="http://cuxiao.suning.com/bxqbx.html" class="big" target="_blank" cpmid="100003442"
+                   name="index3_homepage1_32618013026_pic01"
+                   href="http://th.suning.com/calCpmClicks?sid=16124241&amp;tid=1612424120170628&amp;ap=NTQ0OTg2NTE3MTI1MDU3MXxkNGYzMzliMDQ0MjBjZTZmMjA3ZTQyNjRmOTQ4N2NmN3wxMDAwMDM0NDJ8MTYxMjQyNDEyMDE3MDYyOHwxNjEyNDI0MXxodHRwOi8vY3V4aWFvLnN1bmluZy5jb20vYnhxYnguaHRtbHxjcG18MjAxNy0wNi0yOCAxMTowNzozMHwxNDk4NjE5MjUwNTY2OTA1NjE3N3wxMC4yNC40OC4xOTJ8MHxodHRwOi8vd3d3LnN1bmluZy5jb20vfDQyOTAxOTY4M3wwfDE0OTg1Mjg1ODA2Mzk5NDY0MnwxNTg5NjM5MHwxMXwxMDB8MTkyLjE2OC4yMTUuMjd8MHx8NzQ0MjQ2OTkzODE3NjZhNzNkMzQ2ZjU4ZDRkZTY1Njh8"
+                   title="全民狂欢">
+                    <img d-src="http://image4.suning.cn/uimg/aps/material/149854786856074139.jpg" d-alt="全民狂欢"
+                         src="http://image.suning.cn/uimg/aps/material/149854786856074139.jpg" alt="全民狂欢">
+                </a>
+                <div class="little little1">
+                    <div class="l-cover"></div>
+                    <a href="http://cuxiao.suning.com/cw001116.html" target="_blank"
+                       name="index3_homepage1_32618013026_pic02">
+                        <p class="img-name">厨卫清凉节</p>
+                        <p class="img-desc">每满1000减100元</p>
+                        <img alt="厨卫清凉节" class="lazy-loading"
+                             src="http://image3.suning.cn/uimg/cms/img/149854991190682551.png">
+                    </a>
+                </div>
+                <div class="little little2">
+                    <div class="l-cover"></div>
+                    <a href="http://shop.suning.com/30001065/index.html" target="_blank"
+                       name="index3_homepage1_32618013026_pic03">
+                        <p class="img-name">格力清凉一夏</p>
+                        <p class="img-desc">变频空调低至2999</p>
+                        <img alt="格力清凉一夏" class="lazy-loading"
+                             src="http://image1.suning.cn/uimg/cms/img/149861268617573272.png">
+                    </a>
+                </div>
+            </li>
+            <li d-color="#1f160d" data-bgflag="true" style="display: none; background: rgb(31, 22, 13);">
+                <a d-href="http://cuxiao.suning.com/bxhes12.html" class="big" target="_blank" cpmid="100003445"
+                   name="index3_homepage1_32618013027_pic01"
+                   href="http://th.suning.com/calCpmClicks?sid=16124242&amp;tid=1612424220170628&amp;ap=MjQ4OTgwNTE0MTI1NTU5MXxlZDYwYzA5MWE0OTUxNDZhYmI3YTZmMzYyNzk0NDAzYXwxMDAwMDM0NDV8MTYxMjQyNDIyMDE3MDYyOHwxNjEyNDI0MnxodHRwczovL2N1eGlhby5zdW5pbmcuY29tL2J4aGVzMTIuaHRtbHxjcG18MjAxNy0wNi0yOCAxMTowNzozNXwxNDk4NjE5MjU1NTc5NDU1ODE1NXwxMC4yNC40OC4xOTJ8MHxodHRwOi8vd3d3LnN1bmluZy5jb20vfDQyOTAxOTY4M3wwfDE0OTg1Mjg1ODA2Mzk5NDY0MnwxNTg5NjM5MXwxMXwxMDB8MTkyLjE2OC41OC4zN3wwfHw4ZGRjNTQ5Y2I0M2NlYzBlNDcwZjFiNDM2YTUzMDMyY3w="
+                   title="大牌粉丝日">
+                    <img d-src="http://image4.suning.cn/uimg/aps/material/149854807962841798.jpg" d-alt="大牌粉丝日"
+                         src="http://image.suning.cn/uimg/aps/material/149854807962841798.jpg" alt="大牌粉丝日">
+                </a>
+                <div class="little little1">
+                    <div class="l-cover"></div>
+                    <a href="http://th.suning.com/calCpmClicks?sid=16124076&amp;tid=1612407620170628&amp;ap=MDQzOTgyNTE3MTI1NTU5MXxjOGM5YTMwYWU0OGM4ZGQzODlhNmY1NzlmZGU1ZDY1YXwxMDAwMDM0NDZ8MTYxMjQwNzYyMDE3MDYyOHwxNjEyNDA3NnxodHRwOi8vbnZjbHMuc3VuaW5nLmNvbS98Y3BtfDIwMTctMDYtMjggMTE6MDc6MzV8MTQ5ODYxOTI1NTU3OTk1NTgxMjJ8MTAuMjQuNDguMTkyfDAuNHxodHRwOi8vd3d3LnN1bmluZy5jb20vfDQyOTAwMTMxN3wwLjR8MTQ5ODUyODU4MDYzOTk0NjQyfDE1ODk2NDAzfDExfDEwMHwxOTIuMTY4LjU4LjM3fDB8fDlkNDg0YmU5NDM4YmFlMjMwMjhkZjE2ZWYwMGEzYzQ5fA=="
+                       target="_blank" cpmid="100003446" name="index3_homepage1_32618013027_pic02" title="雷士照明粉丝节">
+                        <p class="img-name" d-title="雷士照明粉丝节">雷士照明粉丝节</p>
+                        <p class="img-desc" d-title="满599减180元">满599减180元</p>
+                        <img d-src="http://image3.suning.cn/uimg/aps/material/149861124159474415.jpg" d-alt="雷士照明粉丝节"
+                             src="http://image.suning.cn/uimg/aps/material/149861124159474415.jpg" alt="雷士照明粉丝节">
+                    </a>
+                </div>
+                <div class="little little2">
+                    <div class="l-cover"></div>
+                    <a href="http://th.suning.com/calCpmClicks?sid=16117350&amp;tid=1611735020170628&amp;ap=MTQxOTg0NTE5MTI1NTU5MXwyZGQxYzZhMWFjYjQ5NDNhY2E2OGVlYjM0MWFjOGI0OHwxMDAwMDM0NDd8MTYxMTczNTAyMDE3MDYyOHwxNjExNzM1MHxodHRwOi8vc2Npc2t5LnN1bmluZy5jb20vfGNwbXwyMDE3LTA2LTI4IDExOjA3OjM1fDE0OTg2MTkyNTU1ODA1NTU4MTAwfDEwLjI0LjQ4LjE5MnwwfGh0dHA6Ly93d3cuc3VuaW5nLmNvbS98NDI5MDE5NjgzfDB8MTQ5ODUyODU4MDYzOTk0NjQyfDE1ODkzMTgyfDExfDEwMHwxOTIuMTY4LjU4LjM3fDB8fDYwNGMyODI1MTFiNDRhZWU3NTVhMTZmODBiZTJlMjBkfA=="
+                       target="_blank" cpmid="100003447" name="index3_homepage1_32618013027_pic03" title="无毒家具">
+                        <p class="img-name" d-title="无毒家具">无毒家具</p>
+                        <p class="img-desc" d-title="每满1000减100">每满1000减100</p>
+                        <img d-src="http://image3.suning.cn/uimg/aps/material/149420619611173692.jpg" d-alt="无毒家具"
+                             src="http://image.suning.cn/uimg/aps/material/149420619611173692.jpg" alt="无毒家具">
+                    </a>
+                </div>
+            </li>
+            <li d-color="#490a75" data-bgflag="true" style="display: list-item; background: rgb(73, 10, 117);">
+                <a d-href="http://cuxiao.suning.com/hd20161212.html" class="big" target="_blank" cpmid="100003448"
+                   name="index3_homepage1_32618013028_pic01"
+                   href="http://th.suning.com/calCpmClicks?sid=16124243&amp;tid=1612424320170628&amp;ap=ODQzOTg1NTE1MTI2MDU3MXxkOWJjMzJhOTRmOTYyZGNmMTk4NDk4Y2VhNTQxMGMwMHwxMDAwMDM0NDh8MTYxMjQyNDMyMDE3MDYyOHwxNjEyNDI0M3xodHRwczovL2N1eGlhby5zdW5pbmcuY29tL2hkMjAxNjEyMTIuaHRtbHxjcG18MjAxNy0wNi0yOCAxMTowNzo0MHwxNDk4NjE5MjYwNTY4MjA1NjEyMnwxMC4yNC40OC4xOTJ8MHxodHRwOi8vd3d3LnN1bmluZy5jb20vfDQyOTAxOTY4M3wwfDE0OTg1Mjg1ODA2Mzk5NDY0MnwxNTg5NjM5MnwxMXwxMDB8MTkyLjE2OC41MS4zN3wwfHxiMDU1YWMzMjNkZDA2MThkOGFjMWY1MGRkMmEwOWM0OXw="
+                   title="电视家影">
+                    <img d-src="http://image4.suning.cn/uimg/aps/material/149854823523756378.jpg" d-alt="电视家影"
+                         src="http://image.suning.cn/uimg/aps/material/149854823523756378.jpg" alt="电视家影">
+                </a>
+                <div class="little little1">
+                    <div class="l-cover"></div>
+                    <a href="http://cuxiao.suning.com/hd00118.html" target="_blank"
+                       name="index3_homepage1_32618013028_pic02">
+                        <p class="img-name">LG家电品牌周</p>
+                        <p class="img-desc">65英寸电视低至6499</p>
+                        <img alt="LG家电品牌周" class="lazy-loading"
+                             src="http://image1.suning.cn/uimg/cms/img/149855085532133297.png">
+                    </a>
+                </div>
+                <div class="little little2">
+                    <div class="l-cover"></div>
+                    <a href="http://shop.suning.com/30000011/index.html" target="_blank"
+                       name="index3_homepage1_32618013028_pic03">
+                        <p class="img-name">海信送好礼</p>
+                        <p class="img-desc">65英寸曲面4K减800</p>
+                        <img alt="海信送好礼" class="lazy-loading"
+                             src="http://image2.suning.cn/uimg/cms/img/149846950607408522.png">
+                    </a>
+                </div>
+            </li>
+            <li d-color="#291607" data-bgflag="true" style="display: none; background: rgb(41, 22, 7);">
+                <a d-href="http://cuxiao.suning.com/city/cw00225.html" class="big" target="_blank" cpmid="100003451"
+                   name="index3_homepage1_32618013029_pic01"
+                   href="http://th.suning.com/calCpmClicks?sid=16124244&amp;tid=1612424420170628&amp;ap=NjQxOTg0NTE5MjI3MTAxMXwxODI0MTE0NDJmMTlmZWFhNmZlOTA0NTY5NWE2Y2VhZXwxMDAwMDM0NTF8MTYxMjQyNDQyMDE3MDYyOHwxNjEyNDI0NHxodHRwczovL2N1eGlhby5zdW5pbmcuY29tL2NpdHkvY3cwMDIyNS5odG1sfGNwbXwyMDE3LTA2LTI4IDExOjI0OjMxfDE0OTg2MjAyNzEwMDYyMTAwMTQ0fDEwLjI0LjQ4LjE5MnwwfGh0dHA6Ly93d3cuc3VuaW5nLmNvbS98NDI5MDE5NjgzfDB8MTQ5ODUyODU4MDYzOTk0NjQyfDE1ODk2Mzk0fDExfDEwMHwxOTIuMTY4LjIxNS4yMnwwfHwzMTYzZGY0ZTYzZjQ4YTFjNTc0NTgwMzJmYTczZjJjMXw="
+                   title="美的钜惠狂欢">
+                    <img d-src="http://image2.suning.cn/uimg/aps/material/149854862095823508.jpg" d-alt="美的钜惠狂欢"
+                         src="http://image.suning.cn/uimg/aps/material/149854862095823508.jpg" alt="美的钜惠狂欢">
+                </a>
+                <div class="little little1">
+                    <div class="l-cover"></div>
+                    <a href="http://cuxiao.suning.com/city/bxmd123.htm" target="_blank"
+                       name="index3_homepage1_32618013029_pic02">
+                        <p class="img-name">美的冰洗</p>
+                        <p class="img-desc">爆品直降500元</p>
+                        <img alt="美的冰洗" class="lazy-loading"
+                             src="http://image2.suning.cn/uimg/cms/img/149855106050772401.png">
+                    </a>
+                </div>
+                <div class="little little2">
+                    <div class="l-cover"></div>
+                    <a href="http://cuxiao.suning.com/city/hd00045.htm" target="_blank"
+                       name="index3_homepage1_32618013029_pic03">
+                        <p class="img-name">创维55吋超薄</p>
+                        <p class="img-desc">下单优惠300元</p>
+                        <img alt="创维55吋超薄" class="lazy-loading"
+                             src="http://image2.suning.cn/uimg/cms/img/149855112957163296.png">
+                    </a>
+                </div>
+            </li>
+            <li style="background: rgb(16, 24, 41); display: none;" data-bgflag="true">
+                <a href="http://cuxiao.suning.com/city/hd00015.htm" class="big" target="_blank"
+                   name="index3_homepage1_32618013030_pic01">
+                    <img alt="夏普" class="lazy-loading" src="http://image4.suning.cn/uimg/cms/img/149855122370410420.jpg">
+                </a>
+                <div class="little little1">
+                    <div class="l-cover"></div>
+                    <a href="http://th.suning.com/calCpmClicks?sid=16119745&amp;tid=1611974520170628&amp;ap=OTQ4OTgxNTEyMjI2OTIyMXxkYzk3ZGFiMWE4OGQyZWNlODkwY2JlMzJmNzAwODJjNXwxMDAwMDM0NTV8MTYxMTk3NDUyMDE3MDYyOHwxNjExOTc0NXxodHRwczovL2N1eGlhby5zdW5pbmcuY29tL3FqenAuaHRtbHxjcG18MjAxNy0wNi0yOCAxMToyNDoyOXwxNDk4NjIwMjY5MjIwOTkyMjEzM3wxMC4yNC40OC4xOTJ8MHxodHRwOi8vd3d3LnN1bmluZy5jb20vfDQyOTAxOTY4M3wwfDE0OTg1Mjg1ODA2Mzk5NDY0MnwxNTg5NjQwNHwxMXwxMDB8MTkyLjE2OC4yMjIuMTU1fDB8fGI2NzViYjU2MmJjN2JhOTI5NDQ5ZWVkOWJjNDgxYTU2fA=="
+                       target="_blank" cpmid="100003455" name="index3_homepage1_32618013030_pic02" title="纸要新净界">
+                        <p class="img-name" d-title="纸要新净界">纸要新净界</p>
+                        <p class="img-desc" d-title="满2件5折">满2件5折</p>
+                        <img d-src="http://image4.suning.cn/uimg/aps/material/149861222387985554.jpg" d-alt="纸要新净界"
+                             src="http://image.suning.cn/uimg/aps/material/149861222387985554.jpg" alt="纸要新净界">
+                    </a>
+                </div>
+                <div class="little little2">
+                    <div class="l-cover"></div>
+                    <a href="http://th.suning.com/calCpmClicks?sid=16120366&amp;tid=1612036620170628&amp;ap=MDQxOTg0NTE2MjI2OTIzMXxiOWZhZmQxZjNjMmE2YjkwNWEwMGExMDRmYTRiYWU2YXwxMDAwMDM0NTZ8MTYxMjAzNjYyMDE3MDYyOHwxNjEyMDM2NnxodHRwOi8vY3V4aWFvLnN1bmluZy5jb20vanowMy5odG1sfGNwbXwyMDE3LTA2LTI4IDExOjI0OjI5fDE0OTg2MjAyNjkyMjExOTIyMTU1fDEwLjI0LjQ4LjE5MnwwfGh0dHA6Ly93d3cuc3VuaW5nLmNvbS98NDI5MDE5NjgzfDB8MTQ5ODUyODU4MDYzOTk0NjQyfDE1ODk0MjUyfDExfDEwMHwxOTIuMTY4LjIyMi4xNTV8MHx8YjcwMWQ5ZmYxZjg1N2QwMTViZDQ0NmMzYzk4MDU0NDR8"
+                       target="_blank" cpmid="100003456" name="index3_homepage1_32618013030_pic03" title="梦想装修季">
+                        <p class="img-name" d-title="梦想装修季">梦想装修季</p>
+                        <p class="img-desc" d-title="家装3件8折">家装3件8折</p>
+                        <img d-src="http://image1.suning.cn/uimg/aps/material/149562888656944645.jpg" d-alt="梦想装修季"
+                             src="http://image.suning.cn/uimg/aps/material/149562888656944645.jpg" alt="梦想装修季">
+                    </a>
+                </div>
+            </li>
+            <li style="background: rgb(249, 194, 2); display: none;" data-bgflag="true">
+                <a href="http://cuxiao.suning.com/c0623phone.html" class="big" target="_blank"
+                   name="index3_homepage1_32618013031_pic01">
+                    <img alt="手机" class="lazy-loading" src="http://image3.suning.cn/uimg/cms/img/149854800406581601.jpg">
+                </a>
+                <div class="little little1">
+                    <div class="l-cover"></div>
+                    <a href="http://cuxiao.suning.com/csqcl.html" target="_blank" name="index3_homepage1_32618013031_pic02">
+                        <p class="img-name">超市好货清仓</p>
+                        <p class="img-desc">五仓爆款 满99减20</p>
+                        <img alt="超市好货清仓" class="lazy-loading"
+                             src="http://image1.suning.cn/uimg/cms/img/149846687194417823.png">
+                    </a>
+                </div>
+                <div class="little little2">
+                    <div class="l-cover"></div>
+                    <a href="http://cuxiao.suning.com/dn00913.html" target="_blank"
+                       name="index3_homepage1_32618013031_pic03">
+                        <p class="img-name">文具2件8折</p>
+                        <p class="img-desc">买商务本送无线鼠标</p>
+                        <img alt="文具2件8折" class="lazy-loading"
+                             src="http://image1.suning.cn/uimg/cms/img/149847084919137158.png">
+                    </a>
+                </div>
+            </li>
+            <li style="background: rgb(25, 163, 245); display: none;" data-bgflag="true">
+                <a href="http://cuxiao.suning.com/ktdckx.html" class="big" target="_blank"
+                   name="index3_homepage1_32618013032_pic01">
+                    <img alt="空调" class="lazy-loading" src="http://image2.suning.cn/uimg/cms/img/149820902532340507.png">
+                </a>
+                <div class="little little1">
+                    <div class="l-cover"></div>
+                    <a href="http://sale.suning.com/bh/gczg/index.html" target="_blank"
+                       name="index3_homepage1_32618013032_pic02">
+                        <p class="img-name">工厂直供</p>
+                        <p class="img-desc">T恤19元起</p>
+                        <img alt="工厂直供" class="lazy-loading"
+                             src="http://image4.suning.cn/uimg/cms/img/149857215633067259.png">
+                    </a>
+                </div>
+                <div class="little little2">
+                    <div class="l-cover"></div>
+                    <a href="http://cuxiao.suning.com/xjdksyx.html" target="_blank"
+                       name="index3_homepage1_32618013032_pic03">
+                        <p class="img-name">戴森超级品类日</p>
+                        <p class="img-desc">最高省1300元</p>
+                        <img alt="戴森超级品类日" class="lazy-loading"
+                             src="http://image2.suning.cn/uimg/cms/img/149846480098004494.png">
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <a href="javascript:;" class="btn btn-left"></a>
+    <a href="javascript:;" class="btn btn-right"></a>
+    <div class="banner-nav-wrapper">
+
+    </div>
+</div>
+<script type="text/javascript" src="http://res.suning.cn/??public/v3/js/jquery.js"></script>
+<script src="../slide.js"></script>
+<script>
+    $(function () {
+
+        var $wrapper = $('.banner-wrapper');
+        var $left = $wrapper.find('.btn-left');
+        var $right = $wrapper.find('.btn-right');
+
+        $wrapper.hover(function () {
+            $left.show();
+            $right.show();
+        }, function () {
+            $left.hide();
+            $right.hide();
+        });
+
+
+        // jquery plugin 调用方式
+        /*$('.banner').slide({
+            mouseOverDelay: 200,
+            duration: 500,
+            delay: 5000,
+            onchange: function (options) {
+                console.log('onchange', options);
+            },
+            onchangestart: function (options) {
+                console.log('onchangestart', options);
+            },
+            oninitend: function (options) {
+                console.log('oninitend', options);
+            }
+        });
+
+        $left.on('click', function () {
+            $('.banner').slide('prev');
+        });
+
+        $right.on('click', function () {
+            $('.banner').slide('next');
+        });
+
+       */
+
+
+        // ES6 调用方式
+        var slide = new Slide('.banner',{
+            mouseOverDelay: 200,
+            duration: 500,
+            delay: 5000,
+            onchange: function (options) {
+                console.log('onchange', options);
+            },
+            onchangestart: function (options) {
+                console.log('onchangestart', options);
+            },
+            oninitend: function (options) {
+                console.log('oninitend', options);
+            }
+        });
+
+        $left.on('click', function () {
+            slide.prev();
+        });
+
+        $right.on('click', function () {
+            slide.next();
+        });
+
+
+    });
+</script>
+</body>
+</html>
